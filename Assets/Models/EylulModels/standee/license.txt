@@ -1,0 +1,11 @@
+Model Information:
+* title:	Standee
+* source:	https://sketchfab.com/3d-models/standee-3c444e3e390342f389e7e420b39d0d45
+* author:	ndfdev.buyer.partner (https://sketchfab.com/ndfdev.buyer.partner)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Standee" (https://sketchfab.com/3d-models/standee-3c444e3e390342f389e7e420b39d0d45) by ndfdev.buyer.partner (https://sketchfab.com/ndfdev.buyer.partner) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

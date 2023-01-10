@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Locomotion
+* source:	https://sketchfab.com/3d-models/low-poly-locomotion-ff9aaa1ad8e14dc696a68b0fd26f8aa5
+* author:	James Truhlar (https://sketchfab.com/mdcrtv)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Locomotion" (https://sketchfab.com/3d-models/low-poly-locomotion-ff9aaa1ad8e14dc696a68b0fd26f8aa5) by James Truhlar (https://sketchfab.com/mdcrtv) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
