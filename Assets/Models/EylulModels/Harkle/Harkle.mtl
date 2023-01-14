@@ -1,0 +1,32 @@
+#
+# Wavefront material file
+# Created in RealityCapture
+# Engine version v1.2.0.16813
+#
+
+newmtl Harkle_u1_v1
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd Harkle_u1_v1_diffuse.jpeg
+map_Bump Harkle_u1_v1_normal.png
+
+newmtl Harkle_u2_v1
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd Harkle_u2_v1_diffuse.jpeg
+map_Bump Harkle_u2_v1_normal.png
+
+newmtl Harkle_u1_v2
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd Harkle_u1_v2_diffuse.jpeg
+map_Bump Harkle_u1_v2_normal.png

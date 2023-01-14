@@ -1,0 +1,74 @@
+# Exported from Fuse 1.3.0
+
+newmtl Top
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Top_diffuse.png
+map_Ks sortluKiz_Top_specular.png
+bump sortluKiz_Top_normal.png
+map_Ns sortluKiz_Top_gloss.png
+
+newmtl Body
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Body_diffuse.png
+map_Ks sortluKiz_Body_specular.png
+bump sortluKiz_Body_normal.png
+map_Ns sortluKiz_Body_gloss.png
+
+newmtl Eyewear
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Eyewear_diffuse.png
+map_Ks sortluKiz_Eyewear_specular.png
+bump sortluKiz_Eyewear_normal.png
+map_Ns sortluKiz_Eyewear_gloss.png
+
+newmtl Shoes
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Shoes_diffuse.png
+map_Ks sortluKiz_Shoes_specular.png
+bump sortluKiz_Shoes_normal.png
+map_Ns sortluKiz_Shoes_gloss.png
+
+newmtl Bottom
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Bottom_diffuse.png
+map_Ks sortluKiz_Bottom_specular.png
+bump sortluKiz_Bottom_normal.png
+map_Ns sortluKiz_Bottom_gloss.png
+
+newmtl Hair
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+map_Kd sortluKiz_Hair_diffuse.png
+map_Ks sortluKiz_Hair_specular.png
+bump sortluKiz_Hair_normal.png
+map_Ns sortluKiz_Hair_gloss.png
+
