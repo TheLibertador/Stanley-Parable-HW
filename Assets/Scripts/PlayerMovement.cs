@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -16,6 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+
+    public GameObject Button1;
+    public GameObject Button2;
+    private Vector3 button1firstpos;
+    private Vector3 button2firstpos;
+    [SerializeField] private float wait_before_trains_start = 2;
 
     // Update is called once per frame
     void Update()
@@ -42,5 +50,48 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+        CheckButtons();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("StartTrain"))
+        {
+            StartCoroutine(startTrain());
+        }
+        
+    }
+
+    IEnumerator startTrain()
+    {
+        yield return new WaitForSeconds(wait_before_trains_start);
+        GameObject.Find("Train1").GetComponent<TrainController>().startTrain = true;
+        GameObject.Find("Train2").GetComponent<TrainController>().startTrain = true;
+    }
+
+    private void Start()
+    {
+        button1firstpos = Button1.transform.localPosition;
+        button2firstpos = Button2.transform.localPosition;
+    }
+
+    private void CheckButtons(){
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            GameObject.Find("Train1").GetComponent<TrainController>().ResetTrain();
+            var pos = new Vector3(Button1.transform.localPosition.x, -0.018f, Button1.transform.localPosition.z);
+            Button1.transform.DOLocalMove(pos, 0.2f)
+                .OnComplete(()=> Button1.transform.DOLocalMove(button1firstpos, 0.2f));
+        }
+        else if (Input.GetKey(KeyCode.R))
+        {
+            GameObject.Find("Train2").GetComponent<TrainController>().ResetTrain();
+            var firstpos = Button2.transform.position;
+            var pos = new Vector3(Button2.transform.localPosition.x, -0.018f, Button2.transform.localPosition.z);
+            Button2.transform.DOLocalMove(pos, 0.2f)
+                .OnComplete(()=> Button2.transform.DOLocalMove(button2firstpos, 0.2f));
+        }
+    }
+    
+    
 }
