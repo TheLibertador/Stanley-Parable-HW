@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 button2firstpos;
     [SerializeField] private float wait_before_trains_start = 2;
 
+    [SerializeField] private Transform[] AllDoors;
+
+    [SerializeField] private float kapi_kac_derece_acilsin = -147f;
     // Update is called once per frame
     void Update()
     {
@@ -91,6 +94,30 @@ public class PlayerMovement : MonoBehaviour
             Button2.transform.DOLocalMove(pos, 0.2f)
                 .OnComplete(()=> Button2.transform.DOLocalMove(button2firstpos, 0.2f));
         }
+        else if (Input.GetKey(KeyCode.F))
+        {
+            var a = GetClosestDoor(AllDoors);
+            a.DORotate(new Vector3(0, kapi_kac_derece_acilsin,0), 1);
+        }
+    }
+    
+    Transform GetClosestDoor (Transform[] doors)
+    {
+        Transform bestTarget = null;
+        float closestDistanceSqr = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+        foreach(Transform potentialTarget in doors)
+        {
+            Vector3 directionToTarget = potentialTarget.position - currentPosition;
+            float dSqrToTarget = directionToTarget.sqrMagnitude;
+            if(dSqrToTarget < closestDistanceSqr)
+            {
+                closestDistanceSqr = dSqrToTarget;
+                bestTarget = potentialTarget;
+            }
+        }
+     
+        return bestTarget;
     }
     
     
